@@ -4,11 +4,11 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Home from './Home.js';
 import Add from './Add.js';
 import Edit from './Edit.js';
-import Summary from "./Summary.js";
+import Summary from "./Summary";
 
 const Stack = createNativeStackNavigator();
 
-const App = () => {
+const Navigation = () => {
     return (
         <NavigationContainer>
             <Stack.Navigator screenOptions={{ headerShown: false }}>
@@ -21,4 +21,4 @@ const App = () => {
     );
 };
 
-export default App;
+export default Navigation;
